@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Scraper and Summarizer</title>
+</head>
+<body>
+    <h1>Website Scraper and Summarizer</h1>
+    <form method="post">
+        <label for="website">Enter a website URL:</label><br>
+        <input type="text" id="website" name="website" value="https://example.com"><br>
+        <input type="text" id="website" name="product" value="AI Technology"><br>
+        <input type="submit" value="Scrape and Summarize">
+    </form>
+    {% if result %}
+        <h2>Summary:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
